@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./image/logo.png">
+    <title>HTTYD</title>
+
+    <!--Bootstrap Framework-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <a href="index.html">
+            <div class="icon"><i class="fas fa-home"></i></div>
+            <span>Home</span>
+        </a>
+        <a href="form.html">
+            <div class="icon"><i class="fas fa-plus"></i></div>
+            <span>Form</span>
+        </a>
+        <a href="table.html">
+            <div class="icon"><i class="fas fa-list"></i></div>
+            <span>List</span>
+        </a>
+    </div>
+
+    <!-- Navbar Content -->
+    <nav class="navbar navbar-expand-lg navbar-light position-absolute w-100">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#viking">Viking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#dragon">Dragon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#movie">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- Overlay with image (Hero Caption) -->
+<div class="overlay-text">
+    <img src="./image/hero-caption.png" alt="Hero Caption">
+</div>
+
+<!-- Carousel with Parallax Effect and 2 seconds interval -->
+<div id="heroCarousel" class="carousel slide hero-carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url('./image/Carousel/pic1.jpg');">
+        </div>
+        <div class="carousel-item" style="background-image: url('./image/Carousel/pic3.jpg');">
+        </div>
+        <div class="carousel-item" style="background-image: url('./image/Carousel/pic2.jpg');">
+        </div>
+        <div class="carousel-item" style="background-image: url('./image/Carousel/pic4.jpg');">
+        </div>
+        <div class="carousel-item" style="background-image: url('./image/Carousel/pic5.jpg');">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+    <!-- Content -->
+    <section id="home" class="container my-5">
+        <h2>Website To Berk</h2>
+        <p>
+            Website ini adalah sebuah bentuk dedikasi saya sebagai penggemar setia dari <strong>How To Train Your Dragon</strong> (HTTYD), 
+            sebuah tontonan masa kecil yang memberikan pengaruh besar dalam hidup saya. Dari pertama kali saya menonton film ini, 
+            saya langsung terpikat oleh dunia Viking yang penuh dengan petualangan, keajaiban, dan makhluk fantastis, terutama para 
+            naga yang memiliki keunikan dan karakteristik yang begitu hidup.
+        </p>
+        <p>
+            <strong>HTTYD</strong> bukan hanya sekadar film animasi bagi saya, tetapi juga merupakan kisah yang membawa banyak makna 
+            tentang persahabatan, keberanian, serta hubungan antara manusia dan alam. Karakter-karakter seperti Hiccup, Toothless, dan 
+            Astrid, serta keindahan visualnya, berhasil menciptakan dunia yang terasa begitu nyata dan penuh emosi. Setiap kali saya 
+            menyaksikan kisah mereka, saya merasakan kembali semangat petualangan dan kekuatan untuk menghadapi tantangan, sama seperti 
+            Hiccup yang berjuang untuk menemukan keseimbangan antara tradisi Viking dan pemahaman baru tentang naga.
+        </p>
+        <p>
+            Seri <strong>How To Train Your Dragon</strong> memiliki <strong>tiga film sekuel</strong>, masing-masing membawa cerita yang 
+            lebih mendalam dan emosional, serta menampilkan perkembangan karakter yang luar biasa. Selain itu, ada juga <strong>satu serial TV</strong> 
+            yang memperluas cerita dari dunia HTTYD, memperkenalkan lebih banyak karakter dan naga, serta menampilkan lebih banyak petualangan yang 
+            tidak kalah serunya. Baik dalam format film maupun serial TV, HTTYD selalu berhasil mempertahankan kualitasnya, dengan animasi yang memukau, 
+            musik yang epik, dan cerita yang mendalam.
+        </p>
+        <p>
+            Website ini didedikasikan untuk merayakan semua aspek dari <strong>How To Train Your Dragon</strong>, dari kisah persahabatan antara 
+            manusia dan naga, hingga eksplorasi dunia fantasi yang kaya akan budaya Viking. Ini adalah ruang di mana saya dapat berbagi kecintaan 
+            saya terhadap seri ini, sekaligus memberikan penghormatan kepada karya luar biasa yang telah memberikan kenangan tak terlupakan sepanjang 
+            masa kecil dan dewasa saya.
+        </p>
+    </section>
+    
+    
+        <div class="row align-items-center text-center mt-4">
+            <!-- Hiccup Section -->
+            <div class="col-md-6 d-flex flex-column align-items-center">
+                <img src="./image/Viking/hiccup.png" alt="Hiccup" class="img-fluid mb-3 style=">
+                <h4>Hiccup Horrendous Haddock III</h4>
+                <p>Hiccup adalah karakter utama dalam How To Train Your Dragon. Dia adalah anak kepala desa Berk yang mengubah hubungan antara manusia dan naga.</p>
+            </div>
+    
+            <!-- Toothless Section -->
+            <div class="col-md-6">
+                <img src="./image/Dragon/tootless.png" alt="Toothless" class="img-fluid mb-3 style=">
+                <h4>Toothless</h4>
+                <p>Toothless adalah naga jenis Night Fury dan sahabat terdekat Hiccup. Bersama Hiccup, mereka mengubah sejarah Berk dan naga.</p>
+            </div>
+        </div>
+    </section>
+    
+
+<!-- Section Viking with Carousel -->
+<section id="viking" class="container my-5 d-flex align-items-center">
+    <div class="row w-100">
+        <!-- Left side text with gray background -->
+        <div class="col-md-6 d-flex flex-column justify-content-center bg-light p-4 text-center">
+            <h2>Viking</h2>
+            <p id="viking-text">The Viking age was a time of exploration, combat, and settlement by Scandinavian seafarers. 
+                They were known for their fearless spirit and their extraordinary sailing and combat skills.</p>
+        </div>
+        
+        <!-- Right side carousel -->
+        <div class="col-md-6 d-flex justify-content-center">
+            <div id="vikingCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                <div class="carousel-inner">
+                    <div class="carousel-item carousel-item-test active">
+                        <img src="./image/Viking/hiccup.png" class="d-block w-100" alt="Viking Exploration">
+                    </div>
+                    <div class="carousel-item carousel-item-test">
+                        <img src="./image/Viking/astrid.png" class="d-block w-100" alt="Viking Battle">
+                    </div>
+                    <div class="carousel-item carousel-item-test">
+                        <img src="./image/Viking/valka.png" class="d-block w-100" alt="Viking Settlement">
+                    </div>
+                    <div class="carousel-item carousel-item-test">
+                        <img src="./image/Viking/eret.png" class="d-block w-100" alt="Viking Settlement">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#vikingCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#vikingCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section Dragon with Carousel -->
+<section id="dragon" class="container my-5 d-flex align-items-center">
+    <div class="row w-100">
+        <div class="col-md-6 d-flex flex-column justify-content-center text-center">
+            <h2>Dragon</h2>
+            <p id="dragon-text">Dragons in Viking culture are often seen as mythical creatures that symbolize power and fear.</p>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center">
+            <div id="dragonCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                <div class="carousel-inner">
+                    <div class="carousel-item carousel-item-test active">
+                        <img src="./image/Dragon/tootless.png" class="d-block w-100" alt="Dragon Power">
+                    </div>
+                    <div class="carousel-item carousel-item-test">
+                        <img src="./image/Dragon/lightfury.png" class="d-block w-100" alt="Dragon Fear">
+                    </div>
+                    <div class="carousel-item carousel-item-test">
+                        <img src="./image/Dragon/stromfly.png" class="d-block w-100" alt="Dragon Flight">
+                    </div>
+                    <div class="carousel-item carousel-item-test">
+                        <img src="./image/Dragon/cloudjumper.png" class="d-block w-100" alt="Dragon Flight">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#dragonCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#dragonCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Section Movie with Cards -->
+<section id="movie" class="container my-5">
+    <h2>Movies</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="movie-cover">
+                    <img src="./image/Movie/dragon-1.png" class="card-img-top" alt="Movie 1">
+                    <div class="movie-title-overlay">
+                        <h5>How to Train Your Dragon 1</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="movie-cover">
+                    <img src="./image/Movie/dragon-2.png" class="card-img-top" alt="Movie 2">
+                    <div class="movie-title-overlay">
+                        <h5>How to Train Your Dragon 2</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="movie-cover">
+                    <img src="./image/Movie/dragon-3.png" class="card-img-top" alt="Movie 3">
+                    <div class="movie-title-overlay">
+                        <h5>How to Train Your Dragon: The Hidden World</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Section About with Centered Logo -->
+<section id="about" class="container my-5 d-flex flex-column align-items-center text-center">
+    <div class="row w-100">
+        <div class="col-md-12">
+            <h2>About</h2>
+            <p>This website is created as a tribute to the Viking culture and the cinematic portrayals of dragons.</p>
+        </div>
+    </div>
+    <div class="row w-100 justify-content-center mt-4">
+        <div class="col-md-4">
+            <img src="./image/dwjpg.jpg" class="img-fluid about-logo" alt="Logo Image">
+        </div>
+    </div>
+</section>
+
+
+
+
+
+        
+    <footer class="text-center my-3">
+         <p>&copy; 2024 Fans Page HTTYG. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,337 @@
+.sidebar {
+    position: fixed;
+    top: 50%;
+    left: 10px; /* Distance from left */
+    transform: translateY(-50%);
+    height: auto;
+    width: 50px; /* Smaller width */
+    background-color: rgba(44, 62, 80, 0.5); /* Transparent background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    z-index: 1000;
+    border-radius: 10px;
+}
+
+.sidebar a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 12px; /* Smaller font size */
+    margin-bottom: 15px;
+    width: 100%; /* Full width clickable area */
+}
+
+.sidebar a .icon {
+    font-size: 18px; /* Smaller icon size */
+    margin-bottom: 5px;
+    color: #ff9d1d;
+}
+
+.sidebar a:hover {
+    background-color: rgba(52, 73, 94, 0.8); /* Slightly darker on hover */
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Navbar styling */
+.navbar-nav {
+    display: flex;
+    justify-content: center; /* Centers the nav items */
+    gap: 30px; /* Adds space between the nav items */
+    width: 100%;
+}
+
+.nav-item {
+    position: relative; /* Necessary for hover underline effect */
+}
+
+.nav-link {
+    color: #000; /* Default color */
+    font-size: 1.2rem; /* Increase the font size for better visibility */
+    text-transform: uppercase; /* Uppercase for each nav item */
+    padding: 10px 15px;
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.nav-link:hover {
+    color: #f2f8ff; /* Change color on hover */
+}
+
+/* Hover underline effect */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ecf5ff; /* Blue underline */
+    transition: width 0.3s ease; /* Smooth underline effect */
+}
+
+.nav-link:hover::after {
+    width: 100%; /* Expand underline on hover */
+}
+
+/* Navbar background */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    z-index: 3; /* To keep it on top of the carousel */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+
+/* Fullscreen Carousel */
+.hero-carousel {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Each carousel item takes full screen */
+.carousel-item {
+    height: 100vh; /* Full screen height for each carousel item */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; /* Parallax effect */
+    background-repeat: no-repeat;
+}
+
+.carousel-item-test {
+    height: 100%; /* Full screen height for each carousel item */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; /* Parallax effect */
+    background-repeat: no-repeat;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+}
+
+.overlay-text img {
+    max-width: 80%;
+    height: auto;
+}
+
+
+
+
+/* Styling for the text section with gray background */
+#viking .bg-light {
+    background-color: #f8f9fa; /* Light gray background */
+    border-radius: 5px; /* Optional: Rounded corners for the background */
+    max-width: 100%; /* Ensure the width is responsive */
+}
+
+/* Padding for better readability */
+#viking .p-4 {
+    padding: 20px;
+}
+
+/* Ensure the carousel images are responsive */
+#vikingCarousel .carousel-item img {
+    object-fit: cover;
+    width: 50%;
+    height: auto;
+}
+
+.movie-cover {
+    position: relative;
+    width: auto; /* Make sure the image fills the container */
+}
+
+.movie-cover img {
+    width: 100%;
+    display: block; /* Removes extra space below image */
+}
+
+.movie-title-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent background */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.movie-card {
+    width: 100%; /* Ensures the card fills its container */
+    border: none; /* Removes any border */
+    padding: 0; /* Removes padding from the card */
+    margin: 0; /* Removes margin */
+}
+
+.movie-title-overlay h5, .movie-title-overlay p {
+    margin: 0;
+    padding: 0;
+}
+
+/* About section styling */
+#about {
+    background-color: #f8f9fa; /* Light gray background for contrast */
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40; /* Dark gray for contrast */
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #495057;
+}
+
+.about-logo {
+    max-width: 200px; /* Resize the logo */
+    height: auto;
+    margin-top: 20px;
+    border-radius: 50%; /* Make the logo circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to the logo */
+}
+
+
+
+/* Section Styling */
+.container {
+    margin-bottom: 40px;
+}
+
+.card {
+    margin-top: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+/*Form Style*/
+
+.container {
+    margin-top: 50px;
+}
+.form-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for Viking feel */
+    border-radius: 10px;
+    color: white;
+}
+h1 {
+    font-family: 'Cinzel', serif; /* Viking-styled font */
+    color: #ffcc00; /* Gold for a royal touch */
+}
+label {
+    font-family: 'MedievalSharp', cursive;
+}
+.btn-primary {
+    background-color: #ffcc00;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #cc9900;
+}
+.naga-icon {
+    width: 40px;
+    margin-right: 10px;
+}
+
+
+/* Responsive text adjustment */
+@media (max-width: 768px) {
+    #viking .p-4 {
+        padding: 15px;
+    }
+    #vikingCarousel .carousel-item img {
+        max-height: 300px;
+    }
+
+    .carousel-item {
+        background-attachment: scroll;
+    }
+
+    #about h2 {
+        font-size: 2rem;
+    }
+    #about p {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* Responsive adjustments */
+@media (min-width: 576px) {
+    .col-md-3 {
+        width: 25%;
+    }
+    .col-md-9 {
+        width: 75%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+}
+
+/* Table styling */
+.table-responsive {
+    height: 400px;
+    overflow-y: scroll;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: #343a40;
+    color: white;
+    padding: 10px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e9ecef;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tbody tr:hover {
+    background-color: #d1d8e0;
+}
+
+td, th {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #343a40;
+}
